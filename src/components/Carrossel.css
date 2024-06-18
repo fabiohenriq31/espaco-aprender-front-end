@@ -1,0 +1,34 @@
+.carousel-image {
+  height: 400px; 
+  object-fit: cover;
+  border-radius: 15px;
+}
+.custom-prev-icon,
+.custom-next-icon {
+  background-color: #007bff; 
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-prev-icon::before,
+.custom-next-icon::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-width: 2px 2px 0 0;
+  border-style: solid;
+  transform: rotate(45deg);
+}
+
+.custom-prev-icon::before {
+  transform: rotate(225deg);
+}
+
+.custom-next-icon::before {
+  transform: rotate(45deg);
+}
