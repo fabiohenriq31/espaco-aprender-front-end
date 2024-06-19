@@ -1,0 +1,66 @@
+.create-post-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-post-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.create-post-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-post-form label {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.create-post-form input[type="text"],
+.create-post-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.create-post-form input[type="text"]:focus,
+.create-post-form textarea:focus {
+  outline: none;
+  border-color: #4caf50; 
+}
+
+.create-post-form button[type="submit"] {
+  background-color: #4caf50; 
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-post-form button[type="submit"]:hover {
+  background-color: #45a049; 
+}
+
+.create-post-form button[type="submit"]:disabled {
+  background-color: #cccccc; 
+  cursor: not-allowed;
+}
+
+.create-post-form .form-error {
+  color: #f44336; 
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
